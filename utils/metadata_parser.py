@@ -12,7 +12,7 @@ def extract_metadata(url):
     return {
         'title': info.get('title', 'No title'),
         'author': info.get('uploader', 'No author'),
-        'hashtags': ', '.join(info.get('tags', [])) if info.get('tags') else 'No hashtags',
+        'description': info.get('description', 'No description'),
         'video_id': info.get('id', 'No video ID'),
         'video_path': info.get('url', 'No video path')
     }
